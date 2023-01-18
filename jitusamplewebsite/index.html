@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>The jitu</title>
+  <link rel="stylesheet" href="/style.css">
+
+
+  </head>
+  <body>
+    <main id="main">
+      <header>
+
+
+      
+        <img src="/assets/logo-jitu-red.svg" alt="" width="100px" height="100px">
+        <h1>Welcome to the jitu family menu</h1>
+        <p>We offer a variety of meals to make your stay smooth and tender.</p>
+        <nav>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact us.html">Contact us</a>
+          <input type="search" name="" id="" placeholder="Search.....">
+
+        
+        </nav>
+      </header>
+      <div id="menu" style="display: flex;" >
+
+          <section id="breakfast">
+          <div>
+            <img src="/assets//food1.jpg" alt="" width="150px" height="150px">
+            <details>Price: 200$</details>
+          </div>
+          <div>
+            <img src="/assets/food2.avif" alt="" width="150px" height="150px">
+            <details>Price: 200$</details>
+          </div>
+          <div>
+            <img src="/assets/food3.avif" alt="" width="150" height="150">
+            <details>Price: 200$</details>
+          </div>
+          <div>
+          <img src="/assets/food4.avif" alt="" width="150" height="150">
+          <details>Price: 200$</details>
+          </div>
+
+        </section>
+        
+        
+        
+        
+      <section id="lunch";">
+        <div>
+          <div>
+            <img src="/assets/breakfastCroissant.avif" alt="" width="150" height="150">
+            <details>breakfastCroissant <br> <i class="fas fa-periscope">100$</i></details>
+          </div>
+          <div>
+          <img src="/assets//breakfastCroissant.avif" alt="" width="150" height="150">
+          
+          </div>
+        </div>
+      </section> 
+      </div>
+      <div id="Sidenav" class="sidebar">
+
+        <h3>Our Sidebar</h3>
+        <ul>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Add new product</a></li>
+          <li><a href="#">Rates and Reviews</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    
+
+    <footer id="footer-2">
+      <div>
+        <h3>Food</h3>
+        <div class="footer-parag">
+          <p>Finger-licking</p>
+          <p>Easy to cook</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>About</h3>
+        <div class="footer-parag">
+          <p>All things food</p>
+          
+        </div>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-parag">
+          <p>+254750388753</p>
+          <p>food@gmail.com</p>
+        </div>
+      </div>
+      
+    </footer>
+  </main>
+
+    <script>
+      function openNav() {
+
+          document.getElementById("Sidenav").style.width = "300px";
+
+          document.getElementById("main").style.marginLeft = "300px";
+          document.getElementById("foot").style.marginLeft = "300px";
+          document.getElementById("footer-2").style.marginLeft = "300px";
+
+
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of
+        body to white */
+        function closeNav() {
+
+          document.getElementById("Sidenav").style.width = "0";
+
+          document.getElementById("main").style.marginLeft = "0";
+          document.getElementById("foot").style.marginLeft = "0";
+          document.getElementById("footer-2").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+        }
+    </script>
+    
+    
+    <!-- <div>
+      &copy; food.corp | 2023
+    </div> -->
+  </body>
+</html>
