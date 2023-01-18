@@ -1,0 +1,125 @@
+:container {
+    --Blue: hsl(246, 80%, 60%);
+  
+    --work     : hsl(15, 100%, 70%);
+    --play     : hsl(195, 74%, 62%);
+    --study    : hsl(348, 100%, 68%);
+    --exercise : hsl(145, 58%, 55%);
+    --social   : hsl(264, 64%, 52%);
+    --self-care: hsl(43, 84%, 65%);
+  
+    --Neutral-blue            : hsl(226, 43%, 10%);
+    --Neutral-Dark-blue       : hsl(235, 46%, 20%);
+    --Neutral-Desaturated-blue: hsl(235, 45%, 61%);
+    --Neutral-Pale-Blue       : hsl(236, 100%, 87%);
+  }
+  
+  * {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family     : 'Rubik', sans-serif;
+    background-color: var(--Neutral-blue);
+    display         : grid;
+    place-content   : center;
+  }
+  
+  /* main {
+    width: 330px;
+  } */
+.container{
+    height: 100vh;
+    width: 1440px;
+}
+.content{
+    height: 98%;
+    width: 98%;
+    padding: 10px;
+}
+.card-profile{
+    height: 80vh;
+    width: 50vw;
+    border-radius: 0.9%;
+    background-color: hsl(235, 46%, 20%)
+
+    /* background-color: hsl(246, 80%, 60%); */
+
+}
+.profile{
+    border-radius: 25px;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 0.9%;
+    background-color: hsl(236, 97%, 27%)
+
+}
+.profile-picture{
+    border-radius: 30%;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 90px;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.profile-details{
+    text-align: center;
+    padding-top: 20px;
+}
+.schedule{
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 25px;    
+}
+.schedule, .h3{
+    justify-items: center;
+    align-items: center;
+}
+.schedule, .h1, .weekly{
+    color: whitesmoke;
+}
+.cards{
+    display: flex;
+    border-radius: 25px;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 0.9%;
+    background-color: hsl(236, 97%, 27%);
+    order: 3;
+}
+.grid-card {
+  display   : grid;
+  gap       : 30px;
+  margin-top: 30px;
+}
+
+.card-work {
+  /* background-color   : var(--work);
+  background-image   : url('../images/icon-work.svg'); */
+  /* background-repeat  : no-repeat;
+  background-position: top right 20px; */
+  height: 50vh;
+  width: 50vw;
+  background-image: url(./images/icon-ellipsis.svg);
+
+}
+
+.work-container{
+
+}
+.card-container--time{
+    text-align: center;
+    color: azure;
+}
+.hours{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: lighter;
+}
