@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5%;
+  
+}
+.content{
+    width: 90%;
+    height: 70%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas:
+     "one one two "
+    "three four two"
+    "five six seven"
+    ;
+}
+.one{
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.two{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.two h1{
+    color: hsl(35, 77%, 62%)
+}
+.three{
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.three{
+
+font-weight: 400, 700, 800;
+font-size: 50px;
+
+}
+.four{
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: four;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.four p{
+   color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.five{
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: five;
+    display: grid;
+    justify-content: space-evenly;
+
+}
+.five p{
+    color: hsl(233, 8%, 79%);
+    font: bold;   
+    
+}
+.five2 h1{
+    color: hsl(233, 8%, 79%);
+    font: 15;
+}
+.five img{
+    height: 13vh;
+    width: 5vw;
+}
+.five2{
+    grid-column: 2;
+    padding-left: 20px;
+}
+.five h4 p{
+    display: flex;
+   
+}
+.six{
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: six;
+    display: flex;
+    justify-content: space-evenly;
+}
+.six p{
+    color: hsl(233, 8%, 79%);
+    font: bold;
+}
+
+.six img{
+    height: 13vh;
+    width: 5vw;
+}
+.six2{
+    grid-column: 2;
+    padding-left: 20px;
+}
+.six h4 p{
+    display: flex;
+   
+}
+.six2 h1{
+    color: hsl(233, 8%, 79%);
+    font: 15;
+}
+.seven{
+    border-radius: 10px;
+    grid-area: seven;
+    display: flex;
+    justify-content: space-evenly;
+}
+.seven2 p{
+    color: hsl(233, 8%, 79%);
+    font: bolder;
+
+}
+.seven2 img{
+    height: 13vh;
+    width: 5vw;
+}
+.seven2{
+    grid-column: 2;
+    padding-left: 20px;
+}
+.seven h4 {
+    display: flex;
+    padding: 5px;
+   
+}
+.seven2 span{
+    color: hsl(233, 8%, 79%);
+    font: 30px;
+}
+.seven img{
+    height: 13vh;
+    width: 5vw;
+}
+.seven2 h1{
+    color: hsl(233, 8%, 79%);
+    font: 15;  
+    
+}
+
+button{
+    background-color:hsl(5, 85%, 63%);
+    color:white;
+    padding:3%;
+    width:50%;
+    border: 5px;
+    
+    
+}
+p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.navbar span{
+    color: hsl(233, 8%, 79% );
+    justify-content: space-between; 
+    margin-left: 30px;   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 2px; */
+}
+.textlogo h1{
+    padding-right: 500px;
+    font-weight: 950px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.links{
+    padding-right: 300px;
+}
