@@ -1,0 +1,112 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.content{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas:
+     "one one two three"
+    "four five five three"
+    ;
+}
+
+.profile img{
+    border-radius:50%;
+}
+
+.one{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+    .profile{
+        display: flex;
+        gap: 10px;
+    }
+
+.one p{
+    color: hsl(0, 0%, 81%);
+    font-size: 20px;
+}
+
+.two{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: two;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+.two p{
+    color: hsl(0, 0%, 81%);
+     font-size: 20px;
+}
+
+.three{
+    background-color:hsl(0, 0%, 100%);
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+.three p{
+    color: hsl(0, 0%, 81%);
+     font-size: 22px;
+}
+
+.four{
+    background-color:hsl(0, 0%, 100%);
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: four;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+.four p{
+    color: hsl(0, 0%, 81%);
+     font-size: 20px;
+}
+
+
+.five{
+    background-color:hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: five;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+.five p{
+    color: hsl(0, 0%, 81%);
+     font-size: 20px;
+}

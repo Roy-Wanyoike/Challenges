@@ -1,19 +1,17 @@
 // const d = new Date();
 // document.getElementById("date").innerHTML = d;
 
-
 // let todoItems = [];
 
 // function addToDo(text){
 //     const todo = {
-//         text, 
+//         text,
 //         checked: false,
 //         id: Date.now(),
 //     };
 //     todoItems.push(todo);
 //     console.log(todoItems);
 // }
-
 
 // const form = document.querySelector('.to-do-app');
 // form.addEventListener('submit', event => {
@@ -29,25 +27,24 @@
 // todoItems.push(todo);
 // console.log(todoItems);
 
-
 let todoItems = [];
 
 function renderTodo(todo) {
-  localStorage.setItem('todoItems', JSON.stringify(todoItems));
+  localStorage.setItem("todoItems", JSON.stringify(todoItems));
 
-  const list = document.querySelector('.js-todo-list');
+  const list = document.querySelector(".js-todo-list");
   const item = document.querySelector(`[data-key='${todo.id}']`);
-  
+
   if (todo.deleted) {
     item.remove();
-    if (todoItems.length === 0) list.innerHTML = '';
-    return
+    if (todoItems.length === 0) list.innerHTML = "";
+    return;
   }
 
-  const isChecked = todo.checked ? 'done': '';
+  const isChecked = todo.checked ? "done" : "";
   const node = document.createElement("li");
-  node.setAttribute('class', `todo-item ${isChecked}`);
-  node.setAttribute('data-key', todo.id);
+  node.setAttribute("class", `todo-item ${isChecked}`);
+  node.setAttribute("data-key", todo.id);
   node.innerHTML = `
     <input id="${todo.id}" type="checkbox"/>
     <label for="${todo.id}" class="tick js-tick"></label>
@@ -76,52 +73,52 @@ function addTodo(text) {
 }
 
 function toggleDone(key) {
-  const index = todoItems.findIndex(item => item.id === Number(key));
+  const index = todoItems.findIndex((item) => item.id === Number(key));
   todoItems[index].checked = !todoItems[index].checked;
   renderTodo(todoItems[index]);
 }
 
 function deleteTodo(key) {
-  const index = todoItems.findIndex(item => item.id === Number(key));
+  const index = todoItems.findIndex((item) => item.id === Number(key));
   const todo = {
     deleted: true,
-    ...todoItems[index]
+    ...todoItems[index],
   };
-  todoItems = todoItems.filter(item => item.id !== Number(key));
+  todoItems = todoItems.filter((item) => item.id !== Number(key));
   renderTodo(todo);
 }
 
-const form = document.querySelector('.js-form');
-form.addEventListener('submit', event => {
+const form = document.querySelector(".js-form");
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const input = document.querySelector('.js-todo-input');
+  const input = document.querySelector(".js-todo-input");
 
   const text = input.value.trim();
-  if (text !== '') {
+  if (text !== "") {
     addTodo(text);
-    input.value = '';
+    input.value = "";
     input.focus();
   }
 });
 
-const list = document.querySelector('.js-todo-list');
-list.addEventListener('click', event => {
-  if (event.target.classList.contains('js-tick')) {
+const list = document.querySelector(".js-todo-list");
+list.addEventListener("click", (event) => {
+  if (event.target.classList.contains("js-tick")) {
     const itemKey = event.target.parentElement.dataset.key;
     toggleDone(itemKey);
   }
-  
-  if (event.target.classList.contains('js-delete-todo')) {
+
+  if (event.target.classList.contains("js-delete-todo")) {
     const itemKey = event.target.parentElement.dataset.key;
     deleteTodo(itemKey);
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const ref = localStorage.getItem('todoItems');
+document.addEventListener("DOMContentLoaded", () => {
+  const ref = localStorage.getItem("todoItems");
   if (ref) {
     todoItems = JSON.parse(ref);
-    todoItems.forEach(t => {
+    todoItems.forEach((t) => {
       renderTodo(t);
     });
   }
