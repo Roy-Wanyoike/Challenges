@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    height: 100vh;
+    /* overflow: hidden; */
+    margin: 0;
+    /* top: -30px;
+    left: -30px; */
+}
+
+.bg {
+    background: url(/royred.jpg) no-repeat center;
+    overflow: hidden;
+    width: 90vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(30px);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+
+
+}
+.loading-text {
+    font-size: 50px;
+    color: rgb(33, 7, 81);
+    font-weight: bolder;
+}
