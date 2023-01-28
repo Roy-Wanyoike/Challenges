@@ -26,7 +26,7 @@ document.getElementById("date").innerHTML = d;
 //     }
 // });
 
-// todoItems.push(todo);
+    // todoItems.push(todo);
 // console.log(todoItems);
 
 

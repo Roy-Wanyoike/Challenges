@@ -1,6 +1,6 @@
 console.log("Hello Boy I am gonna learn Typescript");
 
-function Add (a:number, b:number, c:number, operation : 'add'| 'minus'|'product'){
+function Add (a:number, b:number, c:number, operation : 'add'| 'minus'|'product'): any{
 if(operation=='add'){
     return a+b+c
 }

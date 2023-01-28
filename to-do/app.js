@@ -70,6 +70,13 @@ let deleteTask = (e) => {
   console.log(data);
   
 };
+//delete All Task
+let deleteAllTask = (e) =>{
+  e.parentElement.remove();
+  data.splice(e.parentElement.id,[]);
+    localStorage.removeItem("data",JSON.stingify(data));
+    console.log(data);
+}
 
 let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement;
@@ -92,3 +99,13 @@ let resetForm = () => {
   console.log(data);
   createTasks();
 })();
+
+
+function deleteAll(){
+  var todo =  document.getElementById("todoList");
+  var lis = todo.getElementsByTagName("li");
+  console.log(lis);
+  while(lis.length > 0){                   
+     todo.removeChild(lis[0]);
+  }
+};
