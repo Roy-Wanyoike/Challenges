@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 .container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
     /* position: relative; */
 }
 .counter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #fc7c54;
-    display:flex;
+    height: 800px;
 
 }
 .add{
@@ -19,16 +23,57 @@
 .hero-image{
 
 }
-.welcome{
+.welcome h1{
+    color: #fff;
 
 }
 .output{
 
 }
 .form-page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #fc7c54;
-    display:flex;
-    flex-direction: row;
+    height: 800px;
+
+}
+form h1{
+    margin: 10px;
+    padding:10px;
+    background-color: #fc7c54;
+    color: #fff;
+}
+form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* gap: 1px; */
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+form input{
+    height: 40px;
+    border-radius: 5px; 
+    border: 0.5px groove #545151;
+    outline: none;
+    padding: 10px;
+}
+form button{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fc7c54;
+}
+form label{
+    color: #fc7c54;
+    margin-left: 10px;
+}
+.icon{
+   height: 150px;
+   width: 150px;
+   color: #fff;
 
 }
 .close{
@@ -38,16 +83,18 @@
 
 }
 .activity{
+    gap: 20px;    
 
+}
+.activity h1{
+    font-size: 20px;
+    font-weight: bold;
 }
 .activity form{
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px;
-    height: 400px;
-    width: 400px;
-    margin: 10px;
-    gap: 20px;    
+
+   
 }
 .output{
 
