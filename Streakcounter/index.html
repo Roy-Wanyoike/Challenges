@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="counter">
+            <div class="add">
+                <h1>
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                </h1>
+            </div>
+            <div class="hero-image">
+                <img src="images/demo2-with-watch.png" alt="">
+            </div>
+            <div class="welcome">
+                <h1>Welcome to Streak Counter</h1>
+            </div>
+        </div>
+        <div class="output">
+            <p>
+                You don't Have Any Activity!!!
+            </p>
+        </div>
+
+        <!-- Next modal page -->
+        <div class="form-page">
+            <div class="close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="list">
+                <ion-icon name="list-outline"></ion-icon>
+            </div>
+            <div class="activity">
+                <h1>Please Add A Task</h1>
+                <form action="">
+                    <label for="tasktitle">Task Name</label><br>
+                    <input type="text" name="taskname" id="taskname" placeholder="Add Task Title"><br>
+                    <label for="image"></label><br>
+                    <input type="file" name="image" id="image"><br>
+                    <label for="date">Start Date</label><br>
+                    <input type="datetime-local" name="" id=""><br>
+                    <button id="addtask">Add Task</button>
+
+                </form>
+            </div>
+            
+        </div>
+        <div class="output">
+                <h2>You have not Task listed</h2>
+            </div>
+    </div>
+</body>
+
+</html>
