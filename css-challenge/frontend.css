@@ -1,0 +1,367 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100%;
+}
+.hero-image{
+  background-image: url("./images/hero.png");
+  height: 500px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+}
+.header{
+
+}
+.brand{
+  color: chartreuse;
+}
+.brand h1{
+  font-weight: bolder;
+  font-size: 60px;
+
+}
+.nav-bar{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 300;
+  align-items: center;
+  text-align: center;
+
+}
+.nav-bar a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+}
+.right{
+ 
+}
+.right a{
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+}
+.member{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+}
+.member button{
+
+
+}
+.insurance{
+
+}
+.insure{
+  margin-top: 20px;
+
+}
+.insure h1{
+
+}
+.insure p{
+
+}
+.button-insure{
+
+}
+.button-insure, .quote, .learn{
+
+}
+.learn{
+  border: 1px solid white;
+  background-color: transparent;
+
+}
+.quote{
+
+}
+.card{
+  bottom: 4%;
+  position: absolute;
+  left: 0px;
+  right: 0;
+
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  top: 10%;
+  color: white;
+
+}
+.peace{
+}
+.life{
+
+}
+.life h2{
+
+}
+.life p{
+
+}
+.satisfaction{
+
+}
+.satisfaction, .h2{
+
+
+}
+.satisfaction, .p{
+
+}
+.card--two{
+
+}
+.card-card-one{
+
+}
+.card-card-one, h2{
+
+}
+.card-card-one, p{
+
+}
+.card-card-two{
+
+}
+.card-card-two h2{
+
+}
+.card-card-two p{
+
+}
+.industry {
+
+}
+.industry  h3{
+
+}
+.industry p{
+
+}
+.cards-industry{
+
+}
+.card-industry{
+
+}
+.user{
+
+}
+.user img{
+
+}
+.user h4{
+
+}
+.user p{
+
+}
+.stars{
+
+}
+ .icons{
+
+ }
+ .subscribe{
+
+ }
+ .subscribe h4{
+
+ }
+ .input{
+
+ }
+ .input input{
+
+ }
+ .input button{
+
+ }
+ .pricing{
+
+ }
+ .price{
+
+ }
+ .price h3{
+
+ }
+ .price p{
+
+ }
+ #price{
+
+ }
+ .price-cards{
+  
+ }
+ .free{
+
+ }
+ .free h1{
+
+ }
+ .free h3{
+
+ }
+ .free h1{
+
+
+}
+.free p{
+
+}
+.free button{
+
+}
+
+.standard{
+
+}
+.standard h1{
+
+}
+.standard h3{
+
+}
+.standard h1{
+
+}
+.standard p{
+
+}
+.standard button{
+
+}
+
+.premium{
+
+}
+.premium h1{
+
+}
+.premium h3{
+
+}
+.premium h1{
+
+}
+.premium p{
+
+}
+.premium button{
+
+}
+
+.branches{
+
+}
+.branch-content{
+
+}
+.branch-content h1{
+
+}
+.branch-content p{
+
+}
+
+.branch-map{
+
+}
+.branch-map img{
+
+}
+
+.appointment{
+
+}
+.appointment-image{
+
+}
+.form{
+
+}
+.form h1{
+
+}
+.consulting{
+
+}
+.agency{
+
+}
+.agency h1{
+
+}
+.agency P{
+
+}
+.contact-us{
+
+}
+.contact-us button{
+
+}
+
+.about-us{
+
+}
+.company-info {
+
+}
+.company-info h1{
+
+}
+.company-info a{
+
+}
+.legal {
+
+}
+.legal h1{
+
+}
+.legal a{
+
+}
+.resources {
+
+}
+.resources h1{
+
+}
+.resources a{
+
+}
+.footer {
+
+}
+.footer h1{
+
+}
+.social-icons{
+
+}

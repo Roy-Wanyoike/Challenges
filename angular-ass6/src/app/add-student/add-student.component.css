@@ -1,0 +1,35 @@
+div {
+    text-align: center;
+}
+label {
+    text-align: center;
+}
+.container {
+    height: 80%;
+    width: 80%;
+    border: 10px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: chartreuse;
+
+}
+form {
+    background-color: aqua;
+    font-size: 20px;
+    height: fit-content;
+    border: 10px solid transparent;
+    align-items: center;
+}
+p {
+    background-color: azure;
+    height: fit-content;
+}
+.card{
+    height: fit-content;
+    width: 100px;
+    border: 10px solid transparent;
+    background-color: blueviolet;
+    box-shadow: brown;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Student Fees Balance</h1>
+    <form #login="ngForm" (ngSubmit)="submit(login.value)">
+        <div class="form-group">
+            <label for="studentName">Student Name</label>
+            <br>
+            <input type="text" name="studentName" id="" ngModel>
+            <br>
+
+            <label for="studentFees">Fees Balance</label>
+            <br>
+            <input type="number" name="balanceFees" id="" ngModel>
+            <br>
+
+            <label for="studentID">Student ID</label>
+            <br>
+            <input type="number" name="studentID" id="" ngModel>
+            <br>
+
+            <button type="submit" class="btn btn-primary">Add Student</button>
+
+        </div>
+    </form>
+    <div *ngFor="let test of students" class="card">
+        <p class="name">{{test.studentName}}</p>
+   <p class="id">{{test.studentID}}</p>
+    <p class="fees">{{test.studentFees}}</p>
+    </div>
+   
+</div>

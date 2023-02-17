@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/270f65e3ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js" defer type="module"></script>
+    <title>Tasks To Do</title>
+  </head>
+  <body>
+    <header>
+      <h1>To Do</h1>
+    </header>
+    <div class="modal-body">
+       <form class="todo-form">
+      <input
+        type="text"
+        class="todo-title"
+        placeholder="Enter task title"
+        required
+      />
+      <input
+        type="text"
+        class="todo-input"
+        placeholder="Enter task here"
+        required
+      />
+      <!-- <input type="datetime-local" name="" class="todo-date todo-time" id="" required> -->
+      <input type="date" class="todo-date" required />
+      <input type="time" class="todo-time" required />
+      <button class="todo-button" type="submit">
+        <i class="fa-solid fa-square-plus"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+          <option value="upcoming task">Upcoming task</option>
+        </select>
+      </div>
+    </form>
+    </div>
+   
+    <div class="todo-container"></div>
+  </body>
+</html>
